@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bottom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.spriteapp.atwechat.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.76">
+
+        <com.spriteapp.atwechat.wediget.BottomLayout
+            android:id="@+id/home_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            bottom:text="Home"
+            bottom:top_icon="@drawable/home_selector" />
+
+        <com.spriteapp.atwechat.wediget.BottomLayout
+            android:id="@+id/views_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            bottom:text="Views"
+            bottom:top_icon="@drawable/views_selector" />
+
+
+        <com.spriteapp.atwechat.wediget.BottomLayout
+            android:id="@+id/active_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            bottom:text="Active"
+            bottom:top_icon="@drawable/active_selector" />
+
+        <com.spriteapp.atwechat.wediget.BottomLayout
+            android:id="@+id/task_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            bottom:text="Task"
+            bottom:top_icon="@drawable/task_selector" />
+
+        <com.spriteapp.atwechat.wediget.BottomLayout
+            android:id="@+id/center_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            bottom:text="Center"
+            bottom:top_icon="@drawable/center_selector" />
+
+    </LinearLayout>
+</LinearLayout>
